@@ -21,13 +21,13 @@ function LibroForm({ agregarLibro }) {
       reader.onload = (event) => {
         const nuevoLibro = {
           titulo,
-          imagen: event.target.result, // Almacena la imagen como base64.
+          imagen: event.target.result,
         };
         agregarLibro(nuevoLibro);
         setTitulo('');
         setImagen(null);
       };
-      reader.readAsDataURL(imagen); // Lee la imagen como base64.
+      reader.readAsDataURL(imagen);
     }
   };
 
@@ -40,13 +40,15 @@ function LibroForm({ agregarLibro }) {
           placeholder="Título del Libro"
           value={titulo}
           onChange={handleTituloChange}
+          style={{ marginRight: '1rem' }}
         />
         <input
           type="file"
           accept="image/*"
           onChange={handleImagenChange}
+          style={{ marginRight: '1rem' }}
         />
-        <button type="submit">Registrar</button>
+        <button style={{marginLeft: '0.5rem'}} type="submit">Registrar</button>
       </form>
     </div>
   );
