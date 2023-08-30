@@ -1,0 +1,18 @@
+.centered-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 1200px; /* Limita el ancho del contenedor */
+  margin: 0 auto; /* Centra horizontalmente el contenedor */
+}
+
+.card {
+  flex: 1;
+  max-width: calc(33.33% - 20px); /* Distribuye el espacio en tres columnas con margen */
+}
