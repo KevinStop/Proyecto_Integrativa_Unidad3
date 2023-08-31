@@ -4,7 +4,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
-import "./card.css"; // Importa tu archivo CSS personalizado
+import "../styles/card.css"; // Importa tu archivo CSS personalizado
 
 export default function ActionAreaCards() {
   return (
@@ -15,17 +15,16 @@ export default function ActionAreaCards() {
             <CardActionArea>
               <CardMedia
                 component="img"
-                height="140"
-                image="/static/images/cards/contemplative-reptile.jpg"
-                alt="green iguana"
+                height="240"
+                image="https://cdn.culturagenial.com/es/imagenes/el-principito-portada-cke.jpg"
+                alt="Principito"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                  Lizard
+                  El principito
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  Lizards are a widespread group of squamate reptiles, with over
-                  6,000 species, ranging across all continents except Antarctica
+                Vive en un pequeño planeta que podríamos identificar como su propia vida.
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -36,18 +35,16 @@ export default function ActionAreaCards() {
             <CardActionArea>
               <CardMedia
                 component="img"
-                height="140"
-                image="/static/images/cards/savannah-cat.jpg"
-                alt="savannah cat"
+                height="240"
+                image="https://i.pinimg.com/originals/c0/7f/03/c07f0335aab7d6b4d32d90ab7ba9e7d5.jpg"
+                alt="El Hobbit"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                  Savannah Cat
+                  El Hobbit
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  Savannah cats are a hybrid breed of domestic cat and African
-                  serval, with a distinctive spotted coat and a long, slender
-                  body.
+                El Hobbit, es una novela de J.R.R. Tolkien publicada en el año 1937.
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -55,21 +52,19 @@ export default function ActionAreaCards() {
         </div>
         <div className="card">
           <Card sx={{ maxWidth: 345 }}>
-            <CardActionArea>
+            <CardActionArea >
               <CardMedia
                 component="img"
-                height="140"
-                image="/static/images/cards/red-panda.jpg"
-                alt="red panda"
+                height="240"
+                image="https://cdn.culturagenial.com/es/imagenes/la-sombra-del-viento-portada-cke.jpg"
+                alt="Sombra de viento"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                  Red Panda
+                  Sombra del viento
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  Red pandas are tree-dwelling mammals native to the Eastern
-                  Himalayas and southwestern China. They are about the size of a
-                  raccoon, with reddish-brown fur and a long, bushy tail.
+                Daniel es un niño de trece años, huérfano de madre e hijo de un librero de Barcelona.
                 </Typography>
               </CardContent>
             </CardActionArea>

@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import LibroForm from './LibroForm';
 import ListaLibros from './ListaLibros';
-import './components/Registro.css';
+import './styles/registro.css';
+
+import Navbar from '../src/components/navbar';
+import Footer from '../src/components/footer';
 
 function App() {
   const [libros, setLibros] = useState([]);
@@ -12,6 +15,7 @@ function App() {
 
   return (
     <div className="app-container">
+      <Navbar />
       <header className="app-header">
         <h1>Registro de Libros</h1>
       </header>
@@ -19,6 +23,7 @@ function App() {
         <LibroForm agregarLibro={agregarLibro} />
         <ListaLibros libros={libros} />
       </main>
+      <Footer />
     </div>
   );
 }

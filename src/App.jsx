@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Button from '@mui/material/Button';
 
 import Navbar from '../src/components/navbar';
 import BestSellers from '../src/components/card';
@@ -10,6 +11,14 @@ function App() {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+  };
+
+  const containerStyle2 = {
+    margin: '20px',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    backgroundColor: '',
   };
 
   const rowStyle = {
@@ -86,9 +95,12 @@ function App() {
               Este campamento está diseñado para estudiantes de secundaria que están considerando
               una carrera en educación. ¡Ven a explorar tus intereses con nosotros!
             </p>
-            <button style={buttonStyle}>Leer más</button>
+            <Button variant="contained">Leer Mas</Button>
           </div>
         </div>
+      </div>
+      <div style={containerStyle2}>
+        <h2>¡Regístrate para obtener un descuento en los siguientes libros!</h2>
       </div>
       <BestSellers/>
       <Footer/>
@@ -97,4 +109,3 @@ function App() {
 }
 
 export default App;
-

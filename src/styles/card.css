@@ -1,6 +1,7 @@
 .centered-container {
   display: flex;
   justify-content: center;
+  padding-bottom: 30px;
 }
 
 .card-container {
@@ -10,6 +11,7 @@
   flex-wrap: wrap;
   max-width: 1200px; /* Limita el ancho del contenedor */
   margin: 0 auto; /* Centra horizontalmente el contenedor */
+  text-align: center;
 }
 
 .card {
